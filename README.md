@@ -1,69 +1,74 @@
-# Welcome to your Lovable project
+# Cybersecurity Website
 
-## Project info
+A modern, responsive cybersecurity website built with React, Tailwind CSS, and Vite.
 
-**URL**: https://lovable.dev/projects/b8089bb2-90de-4d10-868d-b18a461550ce
+## Ubuntu 20.04 Installation Guide
 
-## How can I edit this code?
+1. Update system packages:
+\`\`\`bash
+sudo apt update
+sudo apt upgrade
+\`\`\`
 
-There are several ways of editing your application.
+2. Install Node.js and npm:
+\`\`\`bash
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+\`\`\`
 
-**Use Lovable**
+3. Verify installation:
+\`\`\`bash
+node --version
+npm --version
+\`\`\`
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b8089bb2-90de-4d10-868d-b18a461550ce) and start prompting.
+4. Install git:
+\`\`\`bash
+sudo apt install git
+\`\`\`
 
-Changes made via Lovable will be committed automatically to this repo.
+5. Clone the repository:
+\`\`\`bash
+git clone <your-repository-url>
+cd <repository-name>
+\`\`\`
 
-**Use your preferred IDE**
+6. Install dependencies:
+\`\`\`bash
+npm install
+\`\`\`
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+7. Start the development server:
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
-**Edit a file directly in GitHub**
+8. For production build:
+\`\`\`bash
+npm run build
+\`\`\`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+9. To serve the production build:
+\`\`\`bash
+npm install -g serve
+serve -s dist
+\`\`\`
 
-**Use GitHub Codespaces**
+The website will be available at `http://localhost:3000` (development) or `http://localhost:5000` (production).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Features
 
-## What technologies are used for this project?
+- Responsive design
+- Modern UI with animations
+- Contact form with toast notifications
+- Statistics display
+- Security features showcase
 
-This project is built with .
+## Technology Stack
 
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- Typescript
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b8089bb2-90de-4d10-868d-b18a461550ce) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Vite
+- Lucide Icons
+- Shadcn/ui Components

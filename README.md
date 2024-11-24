@@ -5,56 +5,56 @@ A modern, responsive cybersecurity website built with React, Tailwind CSS, and V
 ## Ubuntu 20.04 Installation Guide
 
 1. Update system packages:
-\`\`\`bash
+```bash
 sudo apt update
 sudo apt upgrade
-\`\`\`
+```
 
 2. Install Node.js and npm:
-\`\`\`bash
+```bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
-\`\`\`
+```
 
 3. Verify installation:
-\`\`\`bash
+```bash
 node --version
 npm --version
-\`\`\`
+```
 
 4. Install git:
-\`\`\`bash
+```bash
 sudo apt install git
-\`\`\`
+```
 
 5. Clone the repository:
-\`\`\`bash
+```bash
 git clone <your-repository-url>
 cd <repository-name>
-\`\`\`
+```
 
 6. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 7. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 8. For production build:
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 9. To serve the production build:
-\`\`\`bash
+```bash
 npm install -g serve
 serve -s dist
-\`\`\`
+```
 
-The website will be available at `http://localhost:3000` (development) or `http://localhost:5000` (production).
+The website will be available at `http://localhost:5173` (development) or `http://localhost:5000` (production).
 
 ## Features
 
